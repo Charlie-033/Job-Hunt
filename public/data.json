@@ -1,0 +1,947 @@
+[
+  {
+    "id": "001",
+    "name": "Apple",
+    "logo": "https://i.ibb.co.com/4wC7Sknd/apple-logo.jpg",
+    "location": "Seattle, WA",
+    "website": "https://www.example1.com",
+    "industry": "Technology",
+    "jobs": [
+      {
+        "id": "6ac3d831-0f7e-49e8-b31b-18da9a483fbb",
+        "title": "Recruiter",
+        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "location": "Seattle, WA",
+        "salary": "$96k - $121k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Recruiter to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Bachelor's degree in HR or related field",
+          "2+ years of recruiting experience",
+          "Excellent communication skills",
+          "Knowledge of hiring practices"
+        ]
+      },
+      {
+        "id": "054ed10f-af68-4b27-9fbf-7cf510309a27",
+        "title": "SEO Specialist",
+        "bannerImage": "https://source.unsplash.com/featured/?SEOSpecialist",
+        "location": "Seattle, WA",
+        "salary": "$98k - $147k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled SEO Specialist to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Proven SEO experience",
+          "Knowledge of analytics tools",
+          "Content optimization skills",
+          "Understanding of search algorithms"
+        ]
+      },
+      {
+        "id": "452731b8-2380-45bf-afbe-6d6263fff08e",
+        "title": "Account Executive",
+        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "location": "Austin, TX",
+        "salary": "$61k - $139k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Account Executive to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Sales experience preferred",
+          "Strong negotiation skills",
+          "Ability to build client relationships",
+          "Self-motivated personality"
+        ]
+      },
+      {
+        "id": "e6bddf19-597f-4fd2-bc2f-c1d0e2ca26f9",
+        "title": "Graphic Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?GraphicDesigner",
+        "location": "San Francisco, CA",
+        "salary": "$70k - $145k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Graphic Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Portfolio of design work",
+          "Proficiency in Adobe Creative Suite",
+          "Creativity and originality",
+          "Understanding of design principles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "name": "Google",
+    "logo": "https://i.ibb.co.com/zT1sn8Gf/google-logo.jpg",
+    "location": "San Francisco, CA",
+    "website": "https://www.example2.com",
+    "industry": "Media",
+    "jobs": [
+      {
+        "id": "b7bffc69-cc6d-435b-8969-5600f4fd5300",
+        "title": "Growth Hacker",
+        "bannerImage": "https://source.unsplash.com/featured/?GrowthHacker",
+        "location": "Austin, TX",
+        "salary": "$73k - $148k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Growth Hacker to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Experience with growth strategies",
+          "Data analysis skills",
+          "A/B testing knowledge",
+          "Creative problem-solving"
+        ]
+      },
+      {
+        "id": "5024c509-103c-4395-adda-981dbccf864e",
+        "title": "Backend Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?BackendDeveloper",
+        "location": "Seattle, WA",
+        "salary": "$73k - $138k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Backend Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Proficiency in server-side languages",
+          "Database management skills",
+          "API development experience",
+          "Understanding of security practices"
+        ]
+      },
+      {
+        "id": "12ae5139-4160-42b9-abfb-06e0d7159908",
+        "title": "HR Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?HRManager",
+        "location": "New York, NY",
+        "salary": "$65k - $104k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled HR Manager to join our team and help grow our operations efforts.",
+        "requirements": [
+          "HR certification preferred",
+          "Employee relations experience",
+          "Knowledge of labor laws",
+          "Conflict resolution skills"
+        ]
+      },
+      {
+        "id": "79680849-f55a-4366-ae0b-ad53fb1ef404",
+        "title": "Sales Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?SalesManager",
+        "location": "San Francisco, CA",
+        "salary": "$80k - $103k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Sales Manager to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Proven sales leadership",
+          "Team management experience",
+          "Sales strategy development",
+          "Customer relationship building"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "name": "Amazon",
+    "logo": "https://i.ibb.co.com/4w6srB5v/amazon-logo.webp",
+    "location": "Los Angeles, CA",
+    "website": "https://www.example3.com",
+    "industry": "Consulting",
+    "jobs": [
+      {
+        "id": "0de1d42c-e53c-480c-88aa-6bdeaf4c1dd1",
+        "title": "SEO Specialist",
+        "bannerImage": "https://source.unsplash.com/featured/?SEOSpecialist",
+        "location": "Los Angeles, CA",
+        "salary": "$81k - $104k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled SEO Specialist to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "SEO certification preferred",
+          "Keyword research experience",
+          "Link building strategies",
+          "Technical SEO knowledge"
+        ]
+      },
+      {
+        "id": "19691b1e-db11-4b1a-8ad3-7b7d231f0bae",
+        "title": "Backend Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?BackendDeveloper",
+        "location": "Seattle, WA",
+        "salary": "$56k - $106k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Backend Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Experience with cloud services",
+          "Server architecture knowledge",
+          "Performance optimization",
+          "Version control systems"
+        ]
+      },
+      {
+        "id": "486db3b1-224a-4bc1-add6-7b9284e5597a",
+        "title": "Product Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?ProductDesigner",
+        "location": "Seattle, WA",
+        "salary": "$56k - $146k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Product Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "UX/UI design experience",
+          "Prototyping skills",
+          "User research methods",
+          "Collaboration with developers"
+        ]
+      },
+      {
+        "id": "e3b8525c-3e70-46a0-8ba1-e23e5cc7f8ea",
+        "title": "Business Development Rep",
+        "bannerImage": "https://source.unsplash.com/featured/?BusinessDevelopmentRep",
+        "location": "Los Angeles, CA",
+        "salary": "$83k - $122k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Business Development Rep to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Lead generation experience",
+          "Market research skills",
+          "Presentation abilities",
+          "Networking capabilities"
+        ]
+      },
+      {
+        "id": "4bdab974-c364-4d1e-a525-fd7557973dad",
+        "title": "Office Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?OfficeManager",
+        "location": "Remote",
+        "salary": "$65k - $133k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Office Manager to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Office administration experience",
+          "Organizational skills",
+          "Vendor management",
+          "Budgeting knowledge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "name": "Microsoft",
+    "logo": "https://i.ibb.co.com/8g4k8yb4/microsoft-logo.jpg",
+    "location": "San Francisco, CA",
+    "website": "https://www.example4.com",
+    "industry": "Technology",
+    "jobs": [
+      {
+        "id": "997849e8-ef03-4e14-b0b6-74689edce379",
+        "title": "Business Development Rep",
+        "bannerImage": "https://source.unsplash.com/featured/?BusinessDevelopmentRep",
+        "location": "Chicago, IL",
+        "salary": "$56k - $116k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Business Development Rep to join our team and help grow our sales efforts.",
+        "requirements": [
+          "B2B sales experience",
+          "CRM software knowledge",
+          "Contract negotiation",
+          "Industry knowledge"
+        ]
+      },
+      {
+        "id": "20c30701-8a09-4d7a-bef1-e1bc88e857b5",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://source.unsplash.com/featured/?DevOpsEngineer",
+        "location": "Chicago, IL",
+        "salary": "$74k - $107k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled DevOps Engineer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "CI/CD pipeline experience",
+          "Infrastructure as code",
+          "Containerization technologies",
+          "Monitoring and logging"
+        ]
+      },
+      {
+        "id": "26324ad2-ed4e-47c7-9fde-054abb610cc9",
+        "title": "Operations Analyst",
+        "bannerImage": "https://source.unsplash.com/featured/?OperationsAnalyst",
+        "location": "San Francisco, CA",
+        "salary": "$89k - $101k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Operations Analyst to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Data analysis skills",
+          "Process improvement experience",
+          "Reporting capabilities",
+          "Cross-functional collaboration"
+        ]
+      },
+      {
+        "id": "463ac75a-e1a2-4512-90a2-2d222c699a7c",
+        "title": "Visual Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?VisualDesigner",
+        "location": "Remote",
+        "salary": "$64k - $110k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Visual Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Visual storytelling ability",
+          "Typography skills",
+          "Brand identity development",
+          "Digital design expertise"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "name": "Adobe",
+    "logo": "https://i.ibb.co.com/fYfk8f51/adobe-logo.jpg",
+    "location": "San Francisco, CA",
+    "website": "https://www.example5.com",
+    "industry": "Media",
+    "jobs": [
+      {
+        "id": "22a4efcb-affe-4e0e-a60e-986e45505cae",
+        "title": "Recruiter",
+        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "location": "Chicago, IL",
+        "salary": "$95k - $138k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Recruiter to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Talent acquisition experience",
+          "Interviewing skills",
+          "Employer branding knowledge",
+          "ATS proficiency"
+        ]
+      },
+      {
+        "id": "d5b675f1-0b9f-4aa2-8242-0a5281fe2796",
+        "title": "Frontend Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?FrontendDeveloper",
+        "location": "Austin, TX",
+        "salary": "$79k - $120k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Frontend Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "HTML/CSS/JavaScript expertise",
+          "Responsive design skills",
+          "Frontend frameworks knowledge",
+          "Cross-browser compatibility"
+        ]
+      },
+      {
+        "id": "152a1250-a5a2-4509-899b-f7a2ddf0063b",
+        "title": "Email Marketing Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?EmailMarketingManager",
+        "location": "Chicago, IL",
+        "salary": "$55k - $147k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Email Marketing Manager to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Email campaign experience",
+          "List segmentation skills",
+          "A/B testing knowledge",
+          "Email automation tools"
+        ]
+      },
+      {
+        "id": "40337bba-8277-498d-8e70-59715955351f",
+        "title": "Account Executive",
+        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "location": "San Francisco, CA",
+        "salary": "$74k - $113k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Account Executive to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Client portfolio management",
+          "Sales target achievement",
+          "Product knowledge",
+          "Presentation skills"
+        ]
+      },
+      {
+        "id": "3f0a4a78-fffc-49a9-a26f-8ec0e51ce7a0",
+        "title": "UI/UX Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?UI/UXDesigner",
+        "location": "Los Angeles, CA",
+        "salary": "$92k - $145k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled UI/UX Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "User-centered design approach",
+          "Wireframing and prototyping",
+          "Usability testing",
+          "Design system knowledge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "name": "Uber",
+    "logo": "https://i.ibb.co.com/YFf9D9Km/uber-logo.webp",
+    "location": "New York, NY",
+    "website": "https://www.example6.com",
+    "industry": "Finance",
+    "jobs": [
+      {
+        "id": "58adf000-6ed0-4189-aacf-cd77033c0322",
+        "title": "Content Strategist",
+        "bannerImage": "https://source.unsplash.com/featured/?ContentStrategist",
+        "location": "New York, NY",
+        "salary": "$62k - $120k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Content Strategist to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Content planning experience",
+          "Editorial calendar management",
+          "SEO content creation",
+          "Audience research"
+        ]
+      },
+      {
+        "id": "bcd115c1-ad24-403e-ab54-f47cc0ffe473",
+        "title": "Office Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?OfficeManager",
+        "location": "Seattle, WA",
+        "salary": "$99k - $136k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Office Manager to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Office operations experience",
+          "Event planning skills",
+          "Supply management",
+          "Staff coordination"
+        ]
+      },
+      {
+        "id": "23977dd7-058d-497c-8545-c4cf83693f7b",
+        "title": "Data Scientist",
+        "bannerImage": "https://source.unsplash.com/featured/?DataScientist",
+        "location": "San Francisco, CA",
+        "salary": "$87k - $138k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Data Scientist to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Statistical analysis skills",
+          "Machine learning knowledge",
+          "Data visualization",
+          "Programming in Python/R"
+        ]
+      },
+      {
+        "id": "b91e1547-9632-4b14-a1d5-2423973b646b",
+        "title": "Account Executive",
+        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "location": "New York, NY",
+        "salary": "$99k - $112k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Account Executive to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Client acquisition experience",
+          "Sales pipeline management",
+          "Proposal development",
+          "Market analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "name": "Meta",
+    "logo": "https://i.ibb.co.com/KzqXJHNb/meta-logo.webp",
+    "location": "Seattle, WA",
+    "website": "https://www.example7.com",
+    "industry": "Logistics",
+    "jobs": [
+      {
+        "id": "10187f81-8cf4-4264-b3d2-55a983137091",
+        "title": "Account Executive",
+        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "location": "New York, NY",
+        "salary": "$57k - $120k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Account Executive to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Customer relationship management",
+          "Sales presentations",
+          "Contract negotiation",
+          "Product demonstrations"
+        ]
+      },
+      {
+        "id": "03c3b773-ee9c-4c52-914e-7649ab5a1080",
+        "title": "Email Marketing Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?EmailMarketingManager",
+        "location": "Seattle, WA",
+        "salary": "$98k - $135k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Email Marketing Manager to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Email platform expertise",
+          "Performance analytics",
+          "Compliance knowledge",
+          "Copywriting skills"
+        ]
+      },
+      {
+        "id": "3b83c564-4d07-4f45-90a3-53430cd956b9",
+        "title": "Frontend Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?FrontendDeveloper",
+        "location": "Los Angeles, CA",
+        "salary": "$95k - $145k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Frontend Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "JavaScript frameworks experience",
+          "CSS preprocessors",
+          "Web performance optimization",
+          "Accessibility standards"
+        ]
+      },
+      {
+        "id": "b337548e-fa54-42d6-951d-5aca2a8d5c5b",
+        "title": "Product Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?ProductDesigner",
+        "location": "Remote",
+        "salary": "$70k - $145k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Product Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Design thinking methodology",
+          "Interaction design skills",
+          "Information architecture",
+          "Collaboration with PMs"
+        ]
+      },
+      {
+        "id": "3828e24f-a691-48bc-b554-6926f26eb916",
+        "title": "Recruiter",
+        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "location": "Seattle, WA",
+        "salary": "$64k - $101k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Recruiter to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Candidate sourcing strategies",
+          "Employer value proposition",
+          "Interview coordination",
+          "Diversity hiring practices"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "008",
+    "name": "Tesla",
+    "logo": "https://i.ibb.co.com/ch4S3FVV/tesla-logo.png",
+    "location": "Seattle, WA",
+    "website": "https://www.example8.com",
+    "industry": "Consulting",
+    "jobs": [
+      {
+        "id": "6a964189-8b5a-4552-a062-024d70c80fac",
+        "title": "Product Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?ProductDesigner",
+        "location": "Remote",
+        "salary": "$89k - $116k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Product Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Design portfolio required",
+          "User journey mapping",
+          "Prototyping tools",
+          "Stakeholder management"
+        ]
+      },
+      {
+        "id": "3a3d9a62-bdbd-4890-bc7a-4441c8ed6048",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://source.unsplash.com/featured/?DevOpsEngineer",
+        "location": "Seattle, WA",
+        "salary": "$68k - $144k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled DevOps Engineer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Cloud platform expertise",
+          "Infrastructure automation",
+          "Scripting skills",
+          "Incident management"
+        ]
+      },
+      {
+        "id": "2ebcec38-c7d1-4f96-9f47-b8e1b67ccc2b",
+        "title": "Office Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?OfficeManager",
+        "location": "Austin, TX",
+        "salary": "$81k - $143k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Office Manager to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Office software proficiency",
+          "Space planning",
+          "Vendor negotiations",
+          "Policy implementation"
+        ]
+      },
+      {
+        "id": "a6eea493-2ffe-41b6-9047-3a9b9237fd51",
+        "title": "Social Media Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?SocialMediaManager",
+        "location": "Austin, TX",
+        "salary": "$78k - $103k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Social Media Manager to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Social media platform expertise",
+          "Content calendar management",
+          "Community engagement",
+          "Analytics reporting"
+        ]
+      },
+      {
+        "id": "e595e94c-d2cd-492d-923c-b227524b581b",
+        "title": "Sales Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?SalesManager",
+        "location": "Los Angeles, CA",
+        "salary": "$58k - $143k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Sales Manager to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Sales team leadership",
+          "Revenue forecasting",
+          "Sales training",
+          "Market expansion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "009",
+    "name": "Netflix",
+    "logo": "https://i.ibb.co.com/SDhyKJSN/Netflix-logo.png",
+    "location": "Remote",
+    "website": "https://www.example9.com",
+    "industry": "Healthcare",
+    "jobs": [
+      {
+        "id": "f41b3fcb-1673-4453-aef8-6e9ded812d68",
+        "title": "Mobile Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?MobileDeveloper",
+        "location": "Seattle, WA",
+        "salary": "$59k - $109k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Mobile Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Native app development",
+          "Mobile UI/UX principles",
+          "App store submission",
+          "Performance optimization"
+        ]
+      },
+      {
+        "id": "692f8bf9-cb91-47af-813c-e49a8440067d",
+        "title": "Content Strategist",
+        "bannerImage": "https://source.unsplash.com/featured/?ContentStrategist",
+        "location": "Chicago, IL",
+        "salary": "$69k - $114k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Content Strategist to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Content governance",
+          "Brand voice development",
+          "Content auditing",
+          "Multichannel strategy"
+        ]
+      },
+      {
+        "id": "e95858f9-10ef-4240-8297-4a8862b1923c",
+        "title": "Business Development Rep",
+        "bannerImage": "https://source.unsplash.com/featured/?BusinessDevelopmentRep",
+        "location": "Los Angeles, CA",
+        "salary": "$69k - $118k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Business Development Rep to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Prospecting skills",
+          "Sales qualification",
+          "CRM management",
+          "Industry networking"
+        ]
+      },
+      {
+        "id": "d3f63f20-ffae-423e-87e4-65cfcbe5cd88",
+        "title": "Recruiter",
+        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "location": "Los Angeles, CA",
+        "salary": "$71k - $125k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Recruiter to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Candidate assessment",
+          "Job market knowledge",
+          "Offer negotiation",
+          "Onboarding coordination"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "010",
+    "name": "Oracle",
+    "logo": "https://i.ibb.co.com/Rph5wcWX/oracle-logo.png",
+    "location": "Austin, TX",
+    "website": "https://www.example10.com",
+    "industry": "Finance",
+    "jobs": [
+      {
+        "id": "99713982-ff8a-4a7e-b49f-c4a172cafc72",
+        "title": "Sales Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?SalesManager",
+        "location": "Remote",
+        "salary": "$50k - $134k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Sales Manager to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Sales process optimization",
+          "Team motivation",
+          "Competitive analysis",
+          "Sales tools implementation"
+        ]
+      },
+      {
+        "id": "22ecce83-e56c-494d-8060-5a1ef03432b3",
+        "title": "Operations Analyst",
+        "bannerImage": "https://source.unsplash.com/featured/?OperationsAnalyst",
+        "location": "Seattle, WA",
+        "salary": "$73k - $116k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Operations Analyst to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Process documentation",
+          "Data-driven decision making",
+          "Workflow analysis",
+          "KPI tracking"
+        ]
+      },
+      {
+        "id": "b9efea3f-8712-4efb-9651-0335ef50770b",
+        "title": "Mobile Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?MobileDeveloper",
+        "location": "Austin, TX",
+        "salary": "$93k - $116k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Mobile Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Cross-platform development",
+          "API integration",
+          "Mobile security",
+          "Offline functionality"
+        ]
+      },
+      {
+        "id": "c194b23b-6b3e-4390-82b5-2185f49c2655",
+        "title": "Motion Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?MotionDesigner",
+        "location": "Seattle, WA",
+        "salary": "$50k - $115k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Motion Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Animation software skills",
+          "Storyboarding",
+          "Motion graphics",
+          "Video editing"
+        ]
+      },
+      {
+        "id": "28b098d3-680a-4659-b1c5-e393c0f37cc0",
+        "title": "Content Strategist",
+        "bannerImage": "https://source.unsplash.com/featured/?ContentStrategist",
+        "location": "San Francisco, CA",
+        "salary": "$51k - $137k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Content Strategist to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Content lifecycle management",
+          "SEO writing",
+          "Content localization",
+          "Performance measurement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "011",
+    "name": "Nvidia",
+    "logo": "https://i.ibb.co.com/Xrb7VdbK/nvidia-logo.png",
+    "location": "San Francisco, CA",
+    "website": "https://www.example11.com",
+    "industry": "Education",
+    "jobs": [
+      {
+        "id": "6293892e-6ed1-4e51-8f03-f4f0538f007e",
+        "title": "Product Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?ProductDesigner",
+        "location": "San Francisco, CA",
+        "salary": "$99k - $144k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Product Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "3+ years of experience in product design",
+          "Proficiency in Figma or Sketch",
+          "Strong understanding of UX/UI principles",
+          "Experience collaborating with product teams"
+        ]
+      },
+      {
+        "id": "f845c877-b78c-44b9-8f8a-4434395d761b",
+        "title": "Account Executive",
+        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "location": "Chicago, IL",
+        "salary": "$53k - $136k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Account Executive to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Strong communication and negotiation skills",
+          "Bachelor’s degree in Business or related field",
+          "Familiarity with CRM tools",
+          "Ability to work in a fast-paced environment"
+        ]
+      },
+      {
+        "id": "e9e67a5d-8169-4bd9-9d0e-c0468e1c5a0e",
+        "title": "Administrative Assistant",
+        "bannerImage": "https://source.unsplash.com/featured/?AdministrativeAssistant",
+        "location": "Los Angeles, CA",
+        "salary": "$63k - $123k",
+        "jobType": "Contract",
+        "description": "We are looking for a skilled Administrative Assistant to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Excellent organizational and time-management skills",
+          "Proficiency in MS Office",
+          "Strong communication skills",
+          "Attention to detail"
+        ]
+      },
+      {
+        "id": "d7088a7a-6c30-4502-9eed-2f1389309106",
+        "title": "Growth Hacker",
+        "bannerImage": "https://source.unsplash.com/featured/?GrowthHacker",
+        "location": "Chicago, IL",
+        "salary": "$99k - $141k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Growth Hacker to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Experience in growth strategies and analytics",
+          "Strong background in digital marketing",
+          "Familiarity with A/B testing tools",
+          "Creative and data-driven mindset"
+        ]
+      },
+      {
+        "id": "16689847-9c3e-4f0b-94e9-90ad4c6bfc01",
+        "title": "Frontend Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?FrontendDeveloper",
+        "location": "Remote",
+        "salary": "$65k - $144k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Frontend Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Proficiency in HTML, CSS, JavaScript",
+          "Experience with React or Vue",
+          "Understanding of responsive design",
+          "Git and version control knowledge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "012",
+    "name": "Linux",
+    "logo": "https://i.ibb.co.com/x8tCY4cn/Linux-logo.png",
+    "location": "Chicago, IL",
+    "website": "https://www.example12.com",
+    "industry": "Technology",
+    "jobs": [
+      {
+        "id": "a09f25c5-a1ae-45ad-8d68-7d8a51afe33b",
+        "title": "Email Marketing Manager",
+        "bannerImage": "https://source.unsplash.com/featured/?EmailMarketingManager",
+        "location": "Austin, TX",
+        "salary": "$88k - $127k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Email Marketing Manager to join our team and help grow our marketing efforts.",
+        "requirements": [
+          "Experience with email marketing tools (e.g., Mailchimp, Klaviyo)",
+          "Strong copywriting skills",
+          "Ability to analyze campaign performance",
+          "Knowledge of HTML/CSS is a plus"
+        ]
+      },
+      {
+        "id": "81a894bd-2af9-4912-922b-37c6ad4ca3ac",
+        "title": "Mobile Developer",
+        "bannerImage": "https://source.unsplash.com/featured/?MobileDeveloper",
+        "location": "San Francisco, CA",
+        "salary": "$75k - $130k",
+        "jobType": "Internship",
+        "description": "We are looking for a skilled Mobile Developer to join our team and help grow our engineering efforts.",
+        "requirements": [
+          "Experience with iOS or Android development",
+          "Familiarity with Flutter or React Native",
+          "Understanding of REST APIs",
+          "Strong problem-solving skills"
+        ]
+      },
+      {
+        "id": "a45e66c3-8656-41b4-a833-4c6b22278ce1",
+        "title": "Lead Generation Specialist",
+        "bannerImage": "https://source.unsplash.com/featured/?LeadGenerationSpecialist",
+        "location": "Remote",
+        "salary": "$88k - $117k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Lead Generation Specialist to join our team and help grow our sales efforts.",
+        "requirements": [
+          "Experience with lead generation tools and CRMs",
+          "Strong written and verbal communication",
+          "Ability to research and identify potential leads",
+          "Analytical mindset"
+        ]
+      },
+      {
+        "id": "20f553b6-1f0e-43a1-a4c5-32bba9228b97",
+        "title": "Graphic Designer",
+        "bannerImage": "https://source.unsplash.com/featured/?GraphicDesigner",
+        "location": "New York, NY",
+        "salary": "$95k - $111k",
+        "jobType": "Full-time",
+        "description": "We are looking for a skilled Graphic Designer to join our team and help grow our design efforts.",
+        "requirements": [
+          "Proficiency in Adobe Suite (Photoshop, Illustrator)",
+          "Creativity and attention to detail",
+          "Strong portfolio of previous work",
+          "Ability to meet tight deadlines"
+        ]
+      },
+      {
+        "id": "c8bd625a-df40-402a-a123-f33ea8f12fa4",
+        "title": "Administrative Assistant",
+        "bannerImage": "https://source.unsplash.com/featured/?AdministrativeAssistant",
+        "location": "Seattle, WA",
+        "salary": "$71k - $101k",
+        "jobType": "Part-time",
+        "description": "We are looking for a skilled Administrative Assistant to join our team and help grow our operations efforts.",
+        "requirements": [
+          "Strong organizational skills",
+          "Proficient with office software and scheduling tools",
+          "Ability to multitask and prioritize",
+          "Excellent communication"
+        ]
+      }
+    ]
+  }
+]

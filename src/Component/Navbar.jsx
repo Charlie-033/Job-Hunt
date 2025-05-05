@@ -44,13 +44,13 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink>Item 1</NavLink>
+              <NavLink>Home</NavLink>
             </li>
             <li>
-              <NavLink>Item 1</NavLink>
+              <NavLink>About</NavLink>
             </li>
             <li>
-              <NavLink>Item 3</NavLink>
+              <NavLink>Carrer</NavLink>
             </li>
           </ul>
         </div>
@@ -60,16 +60,19 @@ const Navbar = () => {
             alt=""
             className="w-7 md:w-10 lg:w-12 hidden md:block"
           />
-          <a className="text-2xl lg:text-4xl font-bold text-blue-900">Job Hunt</a>
+          <a className="text-2xl lg:text-4xl font-bold text-blue-900">JobHunt</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 space-x-5">
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
             <NavLink>Home</NavLink>
           </li>
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink>About</NavLink>
+            <NavLink>Find Jobs</NavLink>
+          </li>
+          <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
             <NavLink>Carrer</NavLink>
