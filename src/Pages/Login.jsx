@@ -22,11 +22,11 @@ const Login = () => {
     })
     .catch(error => {
       // console.log(error);
-      setError(error.message)
+      setError("Invalid Email or Password! Try Again")
     })
   }
     return (
-       <div className='flex justify-center items-center pt-8'>
+       <div className='flex justify-center items-center py-10'>
          <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">
         <div className="card-body py-12">
           <form onSubmit={handleLogin}>
