@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import { FaUserTie } from "react-icons/fa6";
 import { RiMenu2Fill } from "react-icons/ri";
+import { AuthContext } from "../Provider/AuthProvider";
+import userIcon from '../assets/userIcon.jpg'
 // import { Link, Navigate, NavLink, useLocation, useNavigate, useParams } from "react-router";
 // import userIcon from "../assets/user.png";
 // import { AuthContext } from "../Provider/AuthProvider";
@@ -11,12 +13,12 @@ const Navbar = () => {
   //   console.log(pathname);
   //   const isCategoryPage = pathname.startsWith("/category/");
   //   const { id } = useParams();
-  //   const { user, logOut } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
   //   console.log(user);
 
-  //   const handleLogOut = () => {
-  //     logOut().then(alert("Logged Out Succesfully")).catch(error => console.log(error))
-  //   }
+    const handleLogOut = () => {
+      logOut().then(alert("Logged Out Succesfully")).catch(error => console.log(error))
+    }
 
   return (
     <div className="navbar bg-base-200 px-3 md:px-8 lg:px-16">
@@ -47,10 +49,10 @@ const Navbar = () => {
               <NavLink to='/'>Home</NavLink>
             </li>
             <li>
-              <NavLink>About</NavLink>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink>Carrer</NavLink>
+              <NavLink to="/carrer">Carrer</NavLink>
             </li>
           </ul>
         </div>
@@ -69,22 +71,29 @@ const Navbar = () => {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink>Find Jobs</NavLink>
-          </li>
-          <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
             <NavLink to="/about">About</NavLink>
           </li>
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink>Carrer</NavLink>
+            <NavLink to="/about">Carrer</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end flex items-center gap-3">
         <span>
-          <FaUserTie size={35} className="border-3 rounded-full p-1 border-blue-900 hidden md:flex"/>
+          <img className="w-10 h-10 rounded-full" src={user ? user.photoURL : userIcon}alt="" />
         </span>
-        <a className="btn bg-blue-900 text-white rounded-full">Login</a>
-        <a className="btn bg-blue-900 text-white rounded-full">Register</a>
+        {
+          user ? 
+          <>
+          <Link to="/auth/login"><button onClick={handleLogOut} className="btn bg-blue-900 text-white rounded-full">LogOut</button></Link>
+          <Link to="/auth/register"><button className="btn bg-blue-900 text-white rounded-full">Register</button></Link> 
+          </>
+          : 
+          <>
+          <Link to="/auth/login"><button className="btn bg-blue-900 text-white rounded-full">Login</button></Link>
+        <Link to="/auth/register"><button className="btn bg-blue-900 text-white rounded-full">Register</button></Link>
+        </>
+        }
       </div>
     </div>
   );

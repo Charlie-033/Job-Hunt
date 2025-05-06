@@ -3,6 +3,11 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "../Layout/RootLayout";
 import CompanyJob from "../Pages/CompanyJob";
 import MainLayout from "../Layout/MainLayout";
+import Loader from "../Component/Loader";
+import AuthLayout from "../Layout/AuthLayout";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -12,18 +17,36 @@ export const router = createBrowserRouter([
       {
         index: true,
         loader: () => fetch("/data.json"),
+        hydrateFallbackElement: <Loader></Loader>,
         element: <MainLayout></MainLayout>
       },
       {
         path: '/industry/:id',
         loader: () => fetch("/data.json"),
-        element: <CompanyJob></CompanyJob>
+        hydrateFallbackElement: <Loader></Loader>,
+        element: <PrivateRoute>
+        <CompanyJob></CompanyJob>
+        </PrivateRoute> 
       },
       {
         path: "about",
         element: <p>About Page</p>,
       },
   ],
+  },
+  {
+    path: '/auth',
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'register',
+        element: <Register></Register>
+      }
+    ]
   }
   
 ]);

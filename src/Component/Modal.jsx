@@ -1,8 +1,6 @@
 import React from "react";
 import { MdLibraryAddCheck } from "react-icons/md";
 
-
-
 const Modal = ({ job, id }) => {
   console.log(id);
   // const id = useParams();
@@ -12,8 +10,8 @@ const Modal = ({ job, id }) => {
       <div className="modal-box bg-linear-to-b from-violet-200 to-slate-100">
         <form method="dialog">
           {/* if there is a button in form, it will close the modal */}
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-1 top-1 text-xl">
-            ✕
+          <button className="btn btn-neutral absolute right-1 top-1 text-sm">
+            X
           </button>
         </form>
         <div className=" p-4 rounded-lg border-2 border-white flex flex-col justify-start bg-linear-to-b from-violet-200 to-slate-100">
@@ -43,15 +41,22 @@ const Modal = ({ job, id }) => {
             </p>
             <p className="mt-2 font-medium text-slate-700">{job.description}</p>
           </div>
-            <p className="italic pt-2 underline font-semibold">Required Skills</p>
+          <p className="italic pt-2 underline font-semibold">Required Skills</p>
           <ul className=" mt-2 text-sm space-y-2 pb-3">
             {job.requirements.map((req, index) => (
-              <li className="flex items-center gap-3" key={index}><MdLibraryAddCheck/><span>{req}</span></li>
+              <li className="flex items-center gap-3" key={index}>
+                <MdLibraryAddCheck />
+                <span>{req}</span>
+              </li>
             ))}
           </ul>
-          <button className="btn bg-blue-950 text-white rounded-full">
-            Apply Now
-          </button>
+          <a
+            href="/" // <-- Replace with your actual application link
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn bg-blue-950 text-white rounded-full w-full">Apply Now</button>
+          </a>
         </div>
       </div>
     </dialog>
