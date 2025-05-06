@@ -44,7 +44,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink>Home</NavLink>
+              <NavLink to='/'>Home</NavLink>
             </li>
             <li>
               <NavLink>About</NavLink>
@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-5">
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink>Home</NavLink>
+            <NavLink to='/'>Home</NavLink>
           </li>
           <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
             <NavLink>Find Jobs</NavLink>

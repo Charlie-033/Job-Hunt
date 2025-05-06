@@ -3,14 +3,15 @@
     "id": "001",
     "name": "Apple",
     "logo": "https://i.ibb.co.com/4wC7Sknd/apple-logo.jpg",
+    "slogan": "Think Different",
     "location": "Seattle, WA",
-    "website": "https://www.example1.com",
+    "website": "https://www.apple.com",
     "industry": "Technology",
     "jobs": [
       {
         "id": "6ac3d831-0f7e-49e8-b31b-18da9a483fbb",
         "title": "Recruiter",
-        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "bannerImage": "https://i.ibb.co.com/b97QGZ7/reqruiter-img.jpg",
         "location": "Seattle, WA",
         "salary": "$96k - $121k",
         "jobType": "Internship",
@@ -25,7 +26,7 @@
       {
         "id": "054ed10f-af68-4b27-9fbf-7cf510309a27",
         "title": "SEO Specialist",
-        "bannerImage": "https://source.unsplash.com/featured/?SEOSpecialist",
+        "bannerImage": "https://i.ibb.co.com/ZzQBV3D7/seo-logo.jpg",
         "location": "Seattle, WA",
         "salary": "$98k - $147k",
         "jobType": "Part-time",
@@ -40,7 +41,7 @@
       {
         "id": "452731b8-2380-45bf-afbe-6d6263fff08e",
         "title": "Account Executive",
-        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "bannerImage": "https://i.ibb.co.com/4nWbdBNR/account-executive-logo.png",
         "location": "Austin, TX",
         "salary": "$61k - $139k",
         "jobType": "Internship",
@@ -55,7 +56,7 @@
       {
         "id": "e6bddf19-597f-4fd2-bc2f-c1d0e2ca26f9",
         "title": "Graphic Designer",
-        "bannerImage": "https://source.unsplash.com/featured/?GraphicDesigner",
+        "bannerImage": "https://i.ibb.co.com/mrvgv5pp/graphic-desiner-logo.jpg",
         "location": "San Francisco, CA",
         "salary": "$70k - $145k",
         "jobType": "Part-time",
@@ -73,9 +74,10 @@
     "id": "002",
     "name": "Google",
     "logo": "https://i.ibb.co.com/zT1sn8Gf/google-logo.jpg",
+    "slogan": "Do right thing",
     "location": "San Francisco, CA",
-    "website": "https://www.example2.com",
-    "industry": "Media",
+    "website": "https://www.google.com",
+    "industry": "Technology and Internet Servise",
     "jobs": [
       {
         "id": "b7bffc69-cc6d-435b-8969-5600f4fd5300",
@@ -143,14 +145,15 @@
     "id": "003",
     "name": "Amazon",
     "logo": "https://i.ibb.co.com/4w6srB5v/amazon-logo.webp",
+    "slogan": "Hard Work, Have Fun, Make History",
     "location": "Los Angeles, CA",
-    "website": "https://www.example3.com",
-    "industry": "Consulting",
+    "website": "https://www.amazon.com",
+    "industry": "E-Commerce",
     "jobs": [
       {
         "id": "0de1d42c-e53c-480c-88aa-6bdeaf4c1dd1",
         "title": "SEO Specialist",
-        "bannerImage": "https://source.unsplash.com/featured/?SEOSpecialist",
+        "bannerImage": "https://i.ibb.co.com/ZzQBV3D7/seo-logo.jpg",
         "location": "Los Angeles, CA",
         "salary": "$81k - $104k",
         "jobType": "Full-time",
@@ -228,8 +231,9 @@
     "id": "004",
     "name": "Microsoft",
     "logo": "https://i.ibb.co.com/8g4k8yb4/microsoft-logo.jpg",
+    "slogan": "Your potential, Our passion",
     "location": "San Francisco, CA",
-    "website": "https://www.example4.com",
+    "website": "https://www.microsoft.com",
     "industry": "Technology",
     "jobs": [
       {
@@ -298,14 +302,15 @@
     "id": "005",
     "name": "Adobe",
     "logo": "https://i.ibb.co.com/fYfk8f51/adobe-logo.jpg",
+    "slogan": "To change the world through digital experiences",
     "location": "San Francisco, CA",
-    "website": "https://www.example5.com",
-    "industry": "Media",
+    "website": "https://www.adobe.com",
+    "industry": "Software Company",
     "jobs": [
       {
         "id": "22a4efcb-affe-4e0e-a60e-986e45505cae",
         "title": "Recruiter",
-        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "bannerImage": "https://i.ibb.co.com/b97QGZ7/reqruiter-img.jpg",
         "location": "Chicago, IL",
         "salary": "$95k - $138k",
         "jobType": "Part-time",
@@ -350,7 +355,7 @@
       {
         "id": "40337bba-8277-498d-8e70-59715955351f",
         "title": "Account Executive",
-        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "bannerImage": "https://i.ibb.co.com/4nWbdBNR/account-executive-logo.png",
         "location": "San Francisco, CA",
         "salary": "$74k - $113k",
         "jobType": "Full-time",
@@ -383,9 +388,10 @@
     "id": "006",
     "name": "Uber",
     "logo": "https://i.ibb.co.com/YFf9D9Km/uber-logo.webp",
+    "slogan": "On Our Way",
     "location": "New York, NY",
-    "website": "https://www.example6.com",
-    "industry": "Finance",
+    "website": "https://www.uber.com",
+    "industry": "Multinational transportation company",
     "jobs": [
       {
         "id": "58adf000-6ed0-4189-aacf-cd77033c0322",
@@ -435,7 +441,7 @@
       {
         "id": "b91e1547-9632-4b14-a1d5-2423973b646b",
         "title": "Account Executive",
-        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "bannerImage": "https://i.ibb.co.com/4nWbdBNR/account-executive-logo.png",
         "location": "New York, NY",
         "salary": "$99k - $112k",
         "jobType": "Part-time",
@@ -453,14 +459,15 @@
     "id": "007",
     "name": "Meta",
     "logo": "https://i.ibb.co.com/KzqXJHNb/meta-logo.webp",
+    "slogan": "Meta, Metamates, me",
     "location": "Seattle, WA",
-    "website": "https://www.example7.com",
-    "industry": "Logistics",
+    "website": "https://www.meta.com",
+    "industry": "Social media and technology company",
     "jobs": [
       {
         "id": "10187f81-8cf4-4264-b3d2-55a983137091",
         "title": "Account Executive",
-        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "bannerImage": "https://i.ibb.co.com/4nWbdBNR/account-executive-logo.png",
         "location": "New York, NY",
         "salary": "$57k - $120k",
         "jobType": "Internship",
@@ -520,7 +527,7 @@
       {
         "id": "3828e24f-a691-48bc-b554-6926f26eb916",
         "title": "Recruiter",
-        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "bannerImage": "https://i.ibb.co.com/b97QGZ7/reqruiter-img.jpg",
         "location": "Seattle, WA",
         "salary": "$64k - $101k",
         "jobType": "Full-time",
@@ -538,9 +545,10 @@
     "id": "008",
     "name": "Tesla",
     "logo": "https://i.ibb.co.com/ch4S3FVV/tesla-logo.png",
+    "slogan": "Accelerating the world's transition to sustainable energy",
     "location": "Seattle, WA",
-    "website": "https://www.example8.com",
-    "industry": "Consulting",
+    "website": "https://www.tesla.com",
+    "industry": "Automotive and clean-energy company",
     "jobs": [
       {
         "id": "6a964189-8b5a-4552-a062-024d70c80fac",
@@ -623,9 +631,10 @@
     "id": "009",
     "name": "Netflix",
     "logo": "https://i.ibb.co.com/SDhyKJSN/Netflix-logo.png",
+    "slogan": "See What's Next",
     "location": "Remote",
-    "website": "https://www.example9.com",
-    "industry": "Healthcare",
+    "website": "https://www.netflix.com",
+    "industry": "Media & Entertainment",
     "jobs": [
       {
         "id": "f41b3fcb-1673-4453-aef8-6e9ded812d68",
@@ -675,7 +684,7 @@
       {
         "id": "d3f63f20-ffae-423e-87e4-65cfcbe5cd88",
         "title": "Recruiter",
-        "bannerImage": "https://source.unsplash.com/featured/?Recruiter",
+        "bannerImage": "https://i.ibb.co.com/b97QGZ7/reqruiter-img.jpg",
         "location": "Los Angeles, CA",
         "salary": "$71k - $125k",
         "jobType": "Contract",
@@ -693,9 +702,10 @@
     "id": "010",
     "name": "Oracle",
     "logo": "https://i.ibb.co.com/Rph5wcWX/oracle-logo.png",
+    "slogan": "Software, Hardwate, Complete",
     "location": "Austin, TX",
-    "website": "https://www.example10.com",
-    "industry": "Finance",
+    "website": "https://www.oracle.com",
+    "industry": "Technology",
     "jobs": [
       {
         "id": "99713982-ff8a-4a7e-b49f-c4a172cafc72",
@@ -778,9 +788,10 @@
     "id": "011",
     "name": "Nvidia",
     "logo": "https://i.ibb.co.com/Xrb7VdbK/nvidia-logo.png",
+    "slogan": "THE WAY IT'S MEANT TO BE PLAYED",
     "location": "San Francisco, CA",
-    "website": "https://www.example11.com",
-    "industry": "Education",
+    "website": "https://www.nvidia.com",
+    "industry": "Technology",
     "jobs": [
       {
         "id": "6293892e-6ed1-4e51-8f03-f4f0538f007e",
@@ -800,7 +811,7 @@
       {
         "id": "f845c877-b78c-44b9-8f8a-4434395d761b",
         "title": "Account Executive",
-        "bannerImage": "https://source.unsplash.com/featured/?AccountExecutive",
+        "bannerImage": "https://i.ibb.co.com/4nWbdBNR/account-executive-logo.png",
         "location": "Chicago, IL",
         "salary": "$53k - $136k",
         "jobType": "Internship",
@@ -863,8 +874,9 @@
     "id": "012",
     "name": "Linux",
     "logo": "https://i.ibb.co.com/x8tCY4cn/Linux-logo.png",
+    "slogan": "Linux: Free software - Free aggravations",
     "location": "Chicago, IL",
-    "website": "https://www.example12.com",
+    "website": "https://www.linux.com",
     "industry": "Technology",
     "jobs": [
       {
@@ -915,7 +927,7 @@
       {
         "id": "20f553b6-1f0e-43a1-a4c5-32bba9228b97",
         "title": "Graphic Designer",
-        "bannerImage": "https://source.unsplash.com/featured/?GraphicDesigner",
+        "bannerImage": "https://i.ibb.co.com/mrvgv5pp/graphic-desiner-logo.jpg",
         "location": "New York, NY",
         "salary": "$95k - $111k",
         "jobType": "Full-time",
