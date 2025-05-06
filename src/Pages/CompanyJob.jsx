@@ -45,7 +45,7 @@ const CompanyJob = () => {
       <h2 className="text-3xl py-10 text-center font-semibold text-blue-950 italic border-b-2">
         Available Job Category
       </h2>
-      <div className="grid grid-cols-1 gap-8 pt-8">
+      <div className="grid grid-cols-1 gap-8 py-8">
         {company.jobs?.map((job) => (
           <JobCard key={job.id} job={job}></JobCard>
         ))}
