@@ -10,6 +10,7 @@ const AuthProvider = ({children}) => {
 
     const provider = new GoogleAuthProvider();
     const signInWithGoogle = () => {
+        setLoading(true)
         return signInWithPopup(auth, provider)
     }
 
@@ -29,6 +30,7 @@ const AuthProvider = ({children}) => {
     }
 
     const updateUser = (updateData) => {
+        setLoading(true)
         return updateProfile(auth.currentUser, updateData)
     }
 

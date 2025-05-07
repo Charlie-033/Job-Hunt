@@ -20,7 +20,10 @@ const ProfileEdit = () => {
         console.log("Profile Updated!");
         navigate("/")
       })
-      .catch(error => console.log(error))
+      .catch(error => {
+        alert("Invalid User! Please Login First...");
+        navigate("/auth/login")
+      })
    
   }
     return (

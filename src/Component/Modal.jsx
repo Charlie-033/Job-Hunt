@@ -2,9 +2,6 @@ import React from "react";
 import { MdLibraryAddCheck } from "react-icons/md";
 
 const Modal = ({ job, id }) => {
-  console.log(id);
-  // const id = useParams();
-  // console.log(id)
   return (
     <dialog id={id} className="modal ">
       <div className="modal-box bg-linear-to-b from-violet-200 to-slate-100">

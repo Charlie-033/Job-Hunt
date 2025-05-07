@@ -45,13 +45,13 @@ const About = () => {
             transitioning into a new field, or looking for your next big
             challenge, JobTrack is designed to support your professional growth.
           </p>
-          <ul className="space-y-3">
             <p className="font-semibold">Key features include:</p>
-            <li>=> A wide range of curated job listings across industries</li>
-            <li>=> Advanced filters to tailor search results</li>
-            <li>=> Personalized job alerts and recommendations</li>
-            <li>=> Resume builder and easy application tools</li>
-            <li>=> Real-time application tracking</li>
+          <ul className="space-y-3 list-disc list-inside">
+            <li> A wide range of curated job listings across industries</li>
+            <li> Advanced filters to tailor search results</li>
+            <li> Personalized job alerts and recommendations</li>
+            <li> Resume builder and easy application tools</li>
+            <li> Real-time application tracking</li>
           </ul>
         </div>
         <div>
@@ -62,11 +62,11 @@ const About = () => {
         </div>
         <div>
             <h3 className="text-2xl font-semibold">4. Our Core Values</h3>
-            <ul className="space-y-3">
-                <li>=> Transparency — Real jobs, real companies, real people</li>
-                <li>=> Accessibility — Designed for users of all experience levels</li>
-                <li>=> Integrity — Committed to ethical and fair recruitment practices</li>
-                <li>=> Innovation — Always improving based on user feedback and job market trends</li>
+            <ul className="space-y-3 list-disc list-inside">
+                <li> Transparency — Real jobs, real companies, real people</li>
+                <li> Accessibility — Designed for users of all experience levels</li>
+                <li> Integrity — Committed to ethical and fair recruitment practices</li>
+                <li> Innovation — Always improving based on user feedback and job market trends</li>
             </ul>
         </div>
         <div>

@@ -13,7 +13,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
     const handleLogOut = () => {
-      logOut().then(alert("Logged Out Succesfully")).catch(error => console.log(error))
+      logOut().then(alert("Logged Out Succesfully")).catch(error => alert("Error :", error))
     }
 
   return (
@@ -48,7 +48,7 @@ const Navbar = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/carrer">Carrer</NavLink>
+              <NavLink to="/404/not-found">404-Error</NavLink>
             </li>
           </ul>
         </div>
@@ -63,14 +63,23 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-5">
-          <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink to='/'>Home</NavLink>
+          <li >
+            <NavLink className={({ isActive }) =>
+            `btn border-0 bg-base-200 text-gray-600 ${
+              isActive ? "bg-blue-900 text-white" : ""
+            }`} to='/'>Home</NavLink>
           </li>
-          <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink to="/about">About</NavLink>
+          <li >
+            <NavLink className={({ isActive }) =>
+            `btn border-0 bg-base-200 text-gray-600 ${
+              isActive ? "bg-blue-900 text-white" : ""
+            }`} to="/about">About</NavLink>
           </li>
-          <li className="text-[17px] font-semibold hover:bg-blue-900 hover:text-white rounded text-gray-600">
-            <NavLink to="/about">Carrer</NavLink>
+          <li >
+            <NavLink className={({ isActive }) =>
+            `btn border-0 bg-base-200 text-gray-600 ${
+              isActive ? "bg-blue-900 text-white" : ""
+            }`} to="/404/not-found">404-Error</NavLink>
           </li>
         </ul>
       </div>

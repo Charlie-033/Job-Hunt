@@ -11,6 +11,7 @@ import PrivateRoute from "../Provider/PrivateRoute";
 import Profile from "../Pages/Profile";
 import ProfileEdit from "../Pages/ProfileEdit";
 import About from "../Pages/About";
+import Error from "../Pages/Error";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ export const router = createBrowserRouter([
         path: "about",
         element: <About></About>,
       },
+      
   ],
   },
   {
@@ -58,6 +60,13 @@ export const router = createBrowserRouter([
         element: <ProfileEdit></ProfileEdit>
       }
     ]
+  },
+  {
+    path: "404/not-found",
+    element: <Error></Error>
+  },
+  {
+    path: '*',
+    element: <Error></Error>
   }
-  
 ]);

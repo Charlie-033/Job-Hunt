@@ -2,11 +2,13 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
 
 const Register = () => {
   const { createUser, updateUser, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [passError, setPassError] = useState()
+  const [passError, setPassError] = useState("");
+  const [error, setError] = useState("");
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -57,7 +59,7 @@ const Register = () => {
         navigate("/");
       })
       .catch((error) => {
-        console.error("Error:", error.message);
+        setError("Error:", error.message);
       });
   };
 
@@ -136,6 +138,9 @@ const Register = () => {
           {
             passError && <p className="text-red-500 font-semibold">{passError}</p>
           }
+          {
+            error && <p className="text-red-500 font-bold">{error}</p>
+          }
             <button type="submit" className="btn btn-primary mt-4 w-full">
               Login
             </button>
@@ -147,6 +152,7 @@ const Register = () => {
             </p>
           </form>
            <button onClick={handleGoogleSignIn} className='btn btn-active w-full bg-orange-400'><span className='text-xl'><FcGoogle/></span> SignIn With Google</button>
+           <button className='btn btn-neutral w-full '><span className='text-xl'><FaGithub/></span> SignIn With GitHub</button>
         </div>
       </div>
     </div>

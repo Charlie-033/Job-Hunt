@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa";
+
 
 
 const Login = () => {
@@ -24,7 +26,7 @@ const Login = () => {
     })
     .catch(error => {
       // console.log(error);
-      setError("Invalid Email or Password! Try Again")
+      setError("Error : Invalid Email or Password! Try Again")
     })
   }
   const handleGoogleSignIn = (e) => {
@@ -59,6 +61,7 @@ const Login = () => {
             <p className='text-center pt-5'>Dont’t Have An Account ? <Link to='/auth/register' className='text-orange-600'>Register</Link></p>
           </form>
             <button onClick={handleGoogleSignIn} className='btn btn-active w-full bg-orange-400'><span className='text-xl'><FcGoogle/></span> SignIn With Google</button>
+            <button className='btn btn-neutral w-full '><span className='text-xl'><FaGithub/></span> SignIn With GitHub</button>
         </div>
       </div>
        </div>
