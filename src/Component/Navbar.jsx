@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { FaUserTie } from "react-icons/fa6";
 import { RiMenu2Fill } from "react-icons/ri";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -9,12 +9,8 @@ import userIcon from '../assets/userIcon.jpg'
 // import { AuthContext } from "../Provider/AuthProvider";
 
 const Navbar = () => {
-  //   const {pathname} = useLocation();
-  //   console.log(pathname);
-  //   const isCategoryPage = pathname.startsWith("/category/");
-  //   const { id } = useParams();
+    const navigate = useNavigate();
     const { user, logOut } = useContext(AuthContext);
-  //   console.log(user);
 
     const handleLogOut = () => {
       logOut().then(alert("Logged Out Succesfully")).catch(error => console.log(error))
@@ -79,14 +75,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end flex items-center gap-3">
-        <span>
+        <span onClick={() => navigate("/auth/profile")} className="cursor-pointer">
           <img className="w-10 h-10 rounded-full" src={user ? user.photoURL : userIcon}alt="" />
         </span>
         {
           user ? 
           <>
           <Link to="/auth/login"><button onClick={handleLogOut} className="btn bg-blue-900 text-white rounded-full">LogOut</button></Link>
-          <Link to="/auth/register"><button className="btn bg-blue-900 text-white rounded-full">Register</button></Link> 
+          <Link to="/auth/edit-profile"><button className="btn bg-blue-900 text-white rounded-full">Edit Profile</button></Link> 
           </>
           : 
           <>

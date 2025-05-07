@@ -8,6 +8,9 @@ import AuthLayout from "../Layout/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import PrivateRoute from "../Provider/PrivateRoute";
+import Profile from "../Pages/Profile";
+import ProfileEdit from "../Pages/ProfileEdit";
+import About from "../Pages/About";
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +33,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <p>About Page</p>,
+        element: <About></About>,
       },
   ],
   },
@@ -45,6 +48,14 @@ export const router = createBrowserRouter([
       {
         path: 'register',
         element: <Register></Register>
+      },
+      {
+        path: 'profile',
+        element: <Profile></Profile>
+      },
+      {
+        path: 'edit-profile',
+        element: <ProfileEdit></ProfileEdit>
       }
     ]
   }

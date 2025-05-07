@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
-  const { createUser, updateUser } = useContext(AuthContext);
+  const { createUser, updateUser, signInWithGoogle } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [passError, setPassError] = useState()
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -12,7 +14,34 @@ const Register = () => {
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const terms = e.target.cheakbox.value;
     // console.log({name, photo, email, password})
+
+    // Cheakbox validation
+    if (!terms) {
+      setPassError("Please accept our terms and conditons");
+      return;
+    }
+    //Password validation
+    const minLength = /^.{6,}$/;
+    const digitValid = /(?=.*\d)/;
+    const lowerCaseValid = /(?=.*[a-z])/;
+    const upperCaseValid = /(?=.*[A-Z])/;
+
+    if (minLength.test(password) === false) {
+      setPassError("Password Must Be 6 Charecter and Longer");
+      return;
+    } else if (digitValid.test(password) === false) {
+      setPassError("Password Must have One Numaric Digit!");
+      return;
+    } else if (lowerCaseValid.test(password) === false) {
+      setPassError("Password Must Have At Least One Lowercase Letter");
+      return;
+    } else if (upperCaseValid.test(password) === false) {
+      setPassError("Password Must Have At Least One Uppercase Letter");
+      return;
+    }
+
 
     createUser(email, password)
       .then((result) => {
@@ -31,6 +60,19 @@ const Register = () => {
         console.error("Error:", error.message);
       });
   };
+
+  const handleGoogleSignIn = (e) => {
+    e.preventDefault();
+    signInWithGoogle()
+    .then(res => {
+      console.log(res);
+      navigate(`${location.state ? location.state : "/"}`)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
+
   return (
     <div className="flex justify-center items-center py-10">
       <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">
@@ -79,16 +121,21 @@ const Register = () => {
               placeholder="Password"
               required
             />
+            <p className="text-xs pt-1 text-gray-600">Note: Password must have at least 6 charecters & one lowercase, one uppercase and one numaric digit!</p>
             <div className="pt-3">
               <label className="label">
                 <input
                   type="checkbox"
+                  name="cheakbox"
                   defaultChecked
                   className="checkbox font-semibold"
                 />
                 Accept Terms & Conditions
               </label>
             </div>
+          {
+            passError && <p className="text-red-500 font-semibold">{passError}</p>
+          }
             <button type="submit" className="btn btn-primary mt-4 w-full">
               Login
             </button>
@@ -99,6 +146,7 @@ const Register = () => {
               </Link>
             </p>
           </form>
+           <button onClick={handleGoogleSignIn} className='btn btn-active w-full bg-orange-400'><span className='text-xl'><FcGoogle/></span> SignIn With Google</button>
         </div>
       </div>
     </div>

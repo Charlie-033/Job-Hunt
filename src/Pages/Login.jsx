@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
+import { FcGoogle } from "react-icons/fc";
+
 
 const Login = () => {
-  const {Login} = useContext(AuthContext);
+  const {Login, signInWithGoogle} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   // console.log(location.state);
@@ -25,6 +27,18 @@ const Login = () => {
       setError("Invalid Email or Password! Try Again")
     })
   }
+  const handleGoogleSignIn = (e) => {
+    e.preventDefault();
+    signInWithGoogle()
+    .then(res => {
+      console.log(res);
+      navigate(`${location.state ? location.state : "/"}`)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
+
     return (
        <div className='flex justify-center items-center py-10'>
          <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">
@@ -37,13 +51,14 @@ const Login = () => {
             <input type="password" name='password' className="input w-full bg-base-200 border-none" placeholder="Password" required/>
             <p>
             {
-              error && <p className='text-red-600 text-sm'>{error}</p>
+              error && <p className='text-red-600 text-sm font-semibold'>{error}</p>
             }
             </p>
             <div className='pt-3'><a className="link link-hover">Forgot password?</a></div>
             <button type='submit' className="btn btn-primary mt-4 w-full">Login</button>
             <p className='text-center pt-5'>Dont’t Have An Account ? <Link to='/auth/register' className='text-orange-600'>Register</Link></p>
           </form>
+            <button onClick={handleGoogleSignIn} className='btn btn-active w-full bg-orange-400'><span className='text-xl'><FcGoogle/></span> SignIn With Google</button>
         </div>
       </div>
        </div>
