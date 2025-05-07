@@ -12,6 +12,7 @@ import Profile from "../Pages/Profile";
 import ProfileEdit from "../Pages/ProfileEdit";
 import About from "../Pages/About";
 import Error from "../Pages/Error";
+import Forgotpass from "../Pages/Forgotpass";
 
 export const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
       {
         path: 'edit-profile',
         element: <ProfileEdit></ProfileEdit>
+      },
+      {
+        path: 'forgot-pass',
+        element: <Forgotpass></Forgotpass>
       }
     ]
   },

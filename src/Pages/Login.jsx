@@ -13,9 +13,11 @@ const Login = () => {
   // console.log(location.state);
   const [error, setError] = useState('')
   // console.log(Login)
+  const [email, setEmail] = useState("")
   const handleLogin = (e) => {
     e.preventDefault();
-    const email = e.target.email.value;
+    // const email = e.target.email.value;
+    // const email = email
     const password = e.target.password.value;
     // console.log(email, password);
 
@@ -48,7 +50,9 @@ const Login = () => {
           <form onSubmit={handleLogin}>
             <h2 className='text-2xl font-semibold text-center pb-5 border-b border-gray-300'>Login Your Account</h2>
             <label className="label text-md font-semibold pt-5 pb-2">Email</label>
-            <input type="email" name='email' className="input w-full bg-base-200 border-none" placeholder="Email Address" required/>
+            <input type="email" name='email' className="input w-full bg-base-200 border-none" placeholder="Email Address" required
+            onChange={(e) => setEmail(e.target.value)}
+            />
             <label className="label text-md font-semibold pt-5 pb-2">Password</label>
             <input type="password" name='password' className="input w-full bg-base-200 border-none" placeholder="Password" required/>
             <p>
@@ -56,7 +60,7 @@ const Login = () => {
               error && <p className='text-red-600 text-sm font-semibold'>{error}</p>
             }
             </p>
-            <div className='pt-3'><a className="link link-hover">Forgot password?</a></div>
+            <div className='pt-3 underline text-sm'><Link to="/auth/forgot-pass" state={{email}} className="link link-hover">Forgot password?</Link></div>
             <button type='submit' className="btn btn-primary mt-4 w-full">Login</button>
             <p className='text-center pt-5'>Dont’t Have An Account ? <Link to='/auth/register' className='text-orange-600'>Register</Link></p>
           </form>
