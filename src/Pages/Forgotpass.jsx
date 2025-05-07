@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const Forgotpass = () => {
     const {resetPassword} = useContext(AuthContext);
@@ -20,6 +22,7 @@ const Forgotpass = () => {
         })
         .catch(error => alert("Error", error))
     }
+    DocumentTitle("Forgotpassword | Job Hunt")
     return (
         <div className='flex justify-center items-center py-10'>
         <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">

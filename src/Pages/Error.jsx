@@ -1,7 +1,10 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const Error = () => {
+    DocumentTitle("Server error | Job Hunt")
     return (
         <div>
             <img src="https://i.ibb.co.com/1JGwSsNm/error-404-not-found.jpg" alt="" className='w-screen h-[85vh] object-cover'/>

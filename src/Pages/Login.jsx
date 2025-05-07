@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { Helmet } from 'react-helmet-async';
+import DocumentTitle from '../Component/DocumentTitle';
 
 
 
@@ -42,7 +44,7 @@ const Login = () => {
       console.log(error)
     })
   }
-
+  DocumentTitle("Login | Job Hunt")
     return (
        <div className='flex justify-center items-center py-10'>
          <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">

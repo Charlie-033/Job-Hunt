@@ -91,7 +91,6 @@ const Navbar = () => {
           user ? 
           <>
           <Link to="/auth/login"><button onClick={handleLogOut} className="btn bg-blue-900 text-white rounded-full">LogOut</button></Link>
-          <Link to="/auth/edit-profile"><button className="btn bg-blue-900 text-white rounded-full">Edit Profile</button></Link> 
           </>
           : 
           <>

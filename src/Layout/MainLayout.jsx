@@ -5,10 +5,12 @@ import Feature from '../Component/Feature';
 import Resume from '../Component/Resume';
 import Interview from '../Component/Interview';
 import FeatureCompanies from '../Component/FeatureCompanies';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const MainLayout = () => {
     const data = useLoaderData();
     // console.log(data)
+    DocumentTitle("Home | Job Hunt")
     return (
         <div>
             <Hero></Hero>

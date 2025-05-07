@@ -1,5 +1,6 @@
 import React from "react";
 import { MdLibraryAddCheck } from "react-icons/md";
+import DocumentTitle from "./DocumentTitle";
 
 const Modal = ({ job, id }) => {
   return (

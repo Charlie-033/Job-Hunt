@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import userIcon from '../assets/userIcon.jpg'
 import { Link } from 'react-router';
+import { Helmet } from 'react-helmet-async';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const Profile = () => {
   const {user} = useContext(AuthContext);
+  DocumentTitle("Profile | Job Hunt")
     return (
         <div className='py-8 bg-linear-to-b from-blue-200 to-neutral-200'>
         <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl py-5 bg-slate-200">

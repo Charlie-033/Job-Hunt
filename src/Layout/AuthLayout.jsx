@@ -2,8 +2,11 @@ import React from 'react';
 import Navbar from '../Component/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Component/Footer';
+import { Helmet } from 'react-helmet-async';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const AuthLayout = () => {
+    DocumentTitle("Auth | Job Hunt")
     return (
         <div className='min-h-screen flex flex-col'>
             <header>

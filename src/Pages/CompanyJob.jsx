@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import JobCard from "../Component/JobCard";
+import { Helmet } from "react-helmet-async";
+import DocumentTitle from "../Component/DocumentTitle";
 
 const CompanyJob = () => {
   const [company, setCompany] = useState([]);
@@ -12,6 +14,7 @@ const CompanyJob = () => {
     const selectedCompany = data.find((singleData) => singleData.id == id);
     setCompany(selectedCompany);
   }, [data, id]);
+  DocumentTitle("Company-Details | Job Hunt")
 
   return (
     <div className="py-5 w-11/12 mx-auto">

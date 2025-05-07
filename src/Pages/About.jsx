@@ -1,7 +1,11 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
+import DocumentTitle from "../Component/DocumentTitle";
 
 const About = () => {
+  DocumentTitle("About | Job Hunt")
   return (
+    <>
     <div className="w-11/12 mx-auto py-5">
       <div className="lg:flex items-center justify-between">
         <div className="w-1/2">
@@ -90,6 +94,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

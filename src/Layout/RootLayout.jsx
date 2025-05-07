@@ -1,14 +1,11 @@
 import React from "react";
 import Navbar from "../Component/Navbar";
-import Hero from "../Component/Hero";
 import Footer from "../Component/Footer";
-import Feature from "../Component/Feature";
 import { Outlet } from "react-router";
-import FeatureCompanies from "../Component/FeatureCompanies";
-import Resume from "../Component/Resume";
-import Interview from "../Component/Interview";
+import DocumentTitle from "../Component/DocumentTitle";
 
 const RootLayout = () => {
+  DocumentTitle("Home | Job Hunt")
   return (
     <div className="min-h-screen flex flex-col">
       <header>

@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
+import DocumentTitle from "../Component/DocumentTitle";
 
 const Register = () => {
   const { createUser, updateUser, signInWithGoogle } = useContext(AuthContext);
@@ -74,7 +76,7 @@ const Register = () => {
       console.log(error)
     })
   }
-
+  DocumentTitle("Register | Job Hunt")
   return (
     <div className="flex justify-center items-center py-10">
       <div className="card bg-base-100 w-full max-w-lg items-center shrink-0 shadow-xl">

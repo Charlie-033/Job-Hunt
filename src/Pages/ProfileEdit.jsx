@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useNavigate } from 'react-router';
+import DocumentTitle from '../Component/DocumentTitle';
 
 const ProfileEdit = () => {
   const {updateUser} = useContext(AuthContext);
@@ -24,7 +25,7 @@ const ProfileEdit = () => {
         alert("Invalid User! Please Login First...");
         navigate("/auth/login")
       })
-   
+   DocumentTitle("Update-profile | Job Hunt")
   }
     return (
        <div className='flex justify-center items-center py-10'>
