@@ -48,7 +48,7 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
-        console.log("User created:", result.user);
+        // console.log("User created:", result.user);
 
         // Update the user's profile
         return updateUser({
@@ -68,7 +68,7 @@ const Register = () => {
     e.preventDefault();
     signInWithGoogle()
     .then(res => {
-      console.log(res);
+      // console.log(res);
       navigate(`${location.state ? location.state : "/"}`)
     })
     .catch(error => {
@@ -143,7 +143,7 @@ const Register = () => {
             error && <p className="text-red-500 font-bold">{error}</p>
           }
             <button type="submit" className="btn btn-primary mt-4 w-full">
-              Login
+              Register
             </button>
             <p className="text-center pt-5">
               Already Have An Account ?{" "}

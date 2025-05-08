@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FcSearch } from "react-icons/fc";
+import { useSpring, animated } from '@react-spring/web';
 
 
 const Hero = ({handleScroll}) => {
@@ -13,9 +14,20 @@ const Hero = ({handleScroll}) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent(prev => (prev + 1) % slides.length)
-    }, 4000)
+    }, 3000)
     return () => clearInterval(timer)
   }, [slides.length])
+
+  const [pressed, setPressed] = useState(false);
+
+  const props = useSpring({
+    transform: pressed ? 'scale(0.95)' : 'scale(1)',
+    boxShadow: pressed
+      ? '0px 2px 5px rgba(0, 0, 0, 0.2)'
+      : '0px 5px 15px rgba(0, 0, 0, 0.3)',
+    config: { tension: 300, friction: 30 },
+  });
+
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-between bg-linear-to-r from-blue-300 to-blue-100   px-3 md:px-8 lg:px-16 py-5">
@@ -30,9 +42,22 @@ const Hero = ({handleScroll}) => {
           and personalized. Start your journey today!
         </p>
         <div className="lg:flex gap-24">
-          <button onClick={handleScroll} className="btn bg-blue-900 text-white rounded-full">
+          <animated.button
+          style={{
+            ...props,
+            background: '#172554',
+            color: 'white',
+            border: 'none',
+            padding: '12px 24px',
+            borderRadius: '20px',
+            cursor: 'pointer',
+          }}
+          onMouseDown={() => setPressed(true)}
+          onMouseUp={() => setPressed(false)}
+          onMouseLeave={() => setPressed(false)}
+          onClick={handleScroll} className="btn bg-blue-900 text-white rounded-full">
             Get Started
-          </button>
+          </animated.button>
           <div className="join rounded full">
             <div>
               <label className="input border-none join-item rounded-full">

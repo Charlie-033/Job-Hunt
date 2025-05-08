@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true)
-    console.log(user)
+    // console.log(user)
 
     const provider = new GoogleAuthProvider();
 
@@ -16,7 +16,7 @@ const AuthProvider = ({children}) => {
     }
 
     const createUser = (email, password) => {
-        setLoading(true)
+        // setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
@@ -31,7 +31,7 @@ const AuthProvider = ({children}) => {
     }
 
     const updateUser = (updateData) => {
-        setLoading(true)
+        // setLoading(true)
         return updateProfile(auth.currentUser, updateData)
     }
     
@@ -63,9 +63,9 @@ const AuthProvider = ({children}) => {
     }
     // console.log(user)
     return (
-        <AuthContext value={AuthData}>
+        <AuthContext.Provider value={AuthData}>
             {children}
-        </AuthContext>
+        </AuthContext.Provider>
     );
 };
 

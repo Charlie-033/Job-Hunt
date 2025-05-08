@@ -13,6 +13,7 @@ import ProfileEdit from "../Pages/ProfileEdit";
 import About from "../Pages/About";
 import Error from "../Pages/Error";
 import Forgotpass from "../Pages/Forgotpass";
+import Blogs from "../Pages/Blogs";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
         path: "about",
         element: <About></About>,
       },
+      {
+        path: "blogs",
+        element: <Blogs></Blogs>
+      }
       
   ],
   },
@@ -65,10 +70,6 @@ export const router = createBrowserRouter([
         element: <Forgotpass></Forgotpass>
       }
     ]
-  },
-  {
-    path: "404/not-found",
-    element: <Error></Error>
   },
   {
     path: '*',

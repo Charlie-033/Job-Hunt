@@ -12,14 +12,14 @@ const ProfileEdit = () => {
     e.preventDefault();
     const Name = e.target.name.value;
     const Photo = e.target.photo.value;
-    console.log(Name, Photo);
+    // console.log(Name, Photo);
 
     updateUser({
         displayName: Name,
         photoURL: Photo,
       })
       .then(() => {
-        console.log("Profile Updated!");
+        // console.log("Profile Updated!");
         navigate("/")
       })
       .catch(error => {

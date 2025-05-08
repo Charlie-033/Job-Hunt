@@ -48,7 +48,7 @@ const Navbar = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/404/not-found">404-Error</NavLink>
+              <NavLink to="/blogs">Blogs</NavLink>
             </li>
           </ul>
         </div>
@@ -79,8 +79,9 @@ const Navbar = () => {
             <NavLink className={({ isActive }) =>
             `btn border-0 bg-base-200 text-gray-600 ${
               isActive ? "bg-blue-900 text-white" : ""
-            }`} to="/404/not-found">404-Error</NavLink>
+            }`} to="/blogs">Blogs</NavLink>
           </li>
+          
         </ul>
       </div>
       <div className="navbar-end flex items-center gap-3">

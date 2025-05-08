@@ -26,13 +26,13 @@ const MainLayout = () => {
         <Feature></Feature>
       </section>
       <section
-        ref={companiesRef}
+        
         className="bg-linear-to-b from-violet-200 to-slate-100 py-20"
       >
         <h3 className="text-4xl text-center text-blue-950 font-bold">
           Featured Companies
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-3 md:px-8 lg:px-32 gap-8 py-10 mx-auto">
+        <div ref={companiesRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-3 md:px-8 lg:px-32 gap-8 py-10 mx-auto">
           {data.map((singleData, index) => (
             <FeatureCompanies
               key={index}

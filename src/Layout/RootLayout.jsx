@@ -3,10 +3,13 @@ import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
 import { Outlet } from "react-router";
 import DocumentTitle from "../Component/DocumentTitle";
+import ScrollTop from "../Component/ScrollTop";
 
 const RootLayout = () => {
   DocumentTitle("Home | Job Hunt")
   return (
+    <>
+    <ScrollTop/>
     <div className="min-h-screen flex flex-col">
       <header>
         <nav>
@@ -20,6 +23,7 @@ const RootLayout = () => {
         <Footer></Footer>
       </footer>
     </div>
+    </>
   );
 };
 

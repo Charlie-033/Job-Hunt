@@ -15,7 +15,7 @@ const Count = () => {
   });
 
   return (
-    <div className="pb-10 hidden md:block">
+    <div className="pb-16 hidden md:block">
       <div className="mx-32 lg:flex justify-between items-center mt-20">
         <animated.div
         style={style}
