@@ -1,12 +1,34 @@
-# React + Vite
+# Job Hunt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##
+Job Hunt is an innovative and user-friendly website designed to help job seekers explore a wide variety of job opportunities across multiple companies. The platform serves as a centralized hub where users can easily find job listings from different companies, review the job criteria, and determine whether they meet the qualifications before applying.
 
-Currently, two official plugins are available:
+## 🌐 Live URL
+[Visit Job Hunt](https://assignment-9-auth-1557b.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Project Purpose
+Job Hunt is an innovative and user-friendly website designed to help job seekers explore a wide variety of job opportunities across multiple companies. It acts as a centralized hub where users can:
+- Browse job listings from various companies.
+- Review job descriptions and qualifications.
+- Determine their eligibility before applying.
+- Simplify the job search process with an intuitive UI.
 
-## Expanding the ESLint configuration
+## 🚀 Key Features
+- 🔍 **Job Search Interface** – Browse through curated listings across multiple industries.
+- 🧾 **Job Details View** – See job roles, qualifications, and application instructions.
+- 🧑‍💼 **User Authentication** – Secure login and signup with Firebase.
+- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop.
+- 🗂️ **JSON-Based Data** – Job listings loaded from structured JSON files.
+- 🔐 **Apply Button** – Easily apply to jobs that match your profile.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 NPM Packages Used
+- `react` – Front-end UI development.
+- `react-router` – Routing between pages.
+- `firebase` – Authentication and backend services.
+- `tailwindcss` – Styling and layout utility classes.
+- `classnames` – Utility for conditional className handling.
+- `react-icons` – Icon library integration.
+- `motion` - For UI Animation
+
+
+
