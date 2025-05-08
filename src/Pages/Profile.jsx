@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import userIcon from '../assets/userIcon.jpg'
 import { Link } from 'react-router';
-import { Helmet } from 'react-helmet-async';
 import DocumentTitle from '../Component/DocumentTitle';
 
 const Profile = () => {

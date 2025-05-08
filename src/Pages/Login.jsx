@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { Helmet } from 'react-helmet-async';
 import DocumentTitle from '../Component/DocumentTitle';
 
 
@@ -12,14 +11,12 @@ const Login = () => {
   const {Login, signInWithGoogle} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  // console.log(location.state);
   const [error, setError] = useState('')
   // console.log(Login)
   const [email, setEmail] = useState("")
   const handleLogin = (e) => {
     e.preventDefault();
     // const email = e.target.email.value;
-    // const email = email
     const password = e.target.password.value;
     // console.log(email, password);
 

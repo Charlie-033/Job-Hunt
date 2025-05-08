@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
-import { Helmet } from "react-helmet-async";
 import DocumentTitle from "../Component/DocumentTitle";
 
 const Register = () => {

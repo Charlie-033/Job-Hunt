@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router";
 import JobCard from "../Component/JobCard";
-import { Helmet } from "react-helmet-async";
 import DocumentTitle from "../Component/DocumentTitle";
 
 const CompanyJob = () => {

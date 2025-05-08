@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FcSearch } from "react-icons/fc";
 
 
-const Hero = () => {
+const Hero = ({handleScroll}) => {
+  const [current, setCurrent] = useState(0);
+  const slides = [
+    "https://i.ibb.co.com/sv2x3N6Z/Job-hero-image.jpg",
+    "https://i.ibb.co.com/S7VTmCZv/presentation-1.jpg",
+    "https://i.ibb.co.com/20W094qV/presentation-2.jpg"
+  ]
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent(prev => (prev + 1) % slides.length)
+    }, 4000)
+    return () => clearInterval(timer)
+  }, [slides.length])
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-between bg-linear-to-r from-blue-300 to-blue-100   px-3 md:px-8 lg:px-16 py-5">
       <div className="md:ml-6 lg:ml-16 space-y-5">
@@ -16,7 +30,7 @@ const Hero = () => {
           and personalized. Start your journey today!
         </p>
         <div className="lg:flex gap-24">
-          <button className="btn bg-blue-900 text-white rounded-full">
+          <button onClick={handleScroll} className="btn bg-blue-900 text-white rounded-full">
             Get Started
           </button>
           <div className="join rounded full">
@@ -29,13 +43,22 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div>
-        <img
-          src="https://i.ibb.co.com/sv2x3N6Z/Job-hero-image.jpg"
-          alt=""
-          className="p-5 bg-white rounded-full object-cover"
-        />
+      <div className="overflow-hidden w-full flex justify-center items-center">
+      <div
+        className="flex transition-transform duration-500"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {slides.map((src, i) => (
+          <div key={i} className="w-full flex-shrink-0 flex justify-center">
+            <img
+              src={src}
+              alt=""
+              className="p-4 bg-white rounded-full object-cover"
+            />
+          </div>
+        ))}
       </div>
+    </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router';
 import DocumentTitle from '../Component/DocumentTitle';
 
 const ProfileEdit = () => {
+  DocumentTitle("Edit | Job Hunt")
   const {updateUser} = useContext(AuthContext);
   const navigate = useNavigate();
 

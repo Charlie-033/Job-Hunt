@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router';
 import { AuthContext } from '../Provider/AuthProvider';
-import { Helmet } from 'react-helmet-async';
 import DocumentTitle from '../Component/DocumentTitle';
 
 const Forgotpass = () => {
