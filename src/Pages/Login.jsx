@@ -38,7 +38,7 @@ const Login = () => {
       navigate(`${location.state ? location.state : "/"}`)
     })
     .catch(error => {
-      console.log(error)
+      setError(error.message)
     })
   }
   DocumentTitle("Login | Job Hunt")

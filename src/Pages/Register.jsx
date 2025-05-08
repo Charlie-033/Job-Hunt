@@ -72,7 +72,7 @@ const Register = () => {
       navigate(`${location.state ? location.state : "/"}`)
     })
     .catch(error => {
-      console.log(error)
+      setError(error.message)
     })
   }
   DocumentTitle("Register | Job Hunt")
