@@ -12,7 +12,7 @@ const PrivateRoute = ({ children }) => {
   if (user || user?.email) {
     return children;
   } else {
-    alert("Please Login First to View Company Details!");
+    alert("Please Login First To Access!");
     return <Navigate state={location.pathname} to='/auth/login'></Navigate>
   } 
   
