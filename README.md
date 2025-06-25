@@ -30,5 +30,21 @@ Job Hunt is an innovative and user-friendly website designed to help job seekers
 - `react-icons` – Icon library integration.
 - `motion` - For UI Animation
 
+---
+
+## 🚀 Run Locally
+
+To run this project on your local machine, follow these steps:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Charlie-033/Job-Hunt.git
+cd your-repo-name
+
+npm install
+
+npm run dev
+
 
 
